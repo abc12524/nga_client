@@ -22,7 +22,7 @@ python -m nga_client threads 275 -p 2   # 第二页
 python -m nga_client read 46826141
 
 # 搜索版块
-python -m nga_client search 鸣潮
+python -m nga_client search 晴风村
 
 # 登录（可选，用于需要认证的版块）
 python -m nga_client login --cookie "ngaPassportUid=xxx; ngaPassportCid=yyy"
@@ -76,7 +76,7 @@ topics = client.get_forum_topics(650, page=1)
 replies = client.read_topic(46826141)
 
 # 搜索版块
-results = client.search_forum("鸣潮")
+results = client.search_forum("晴风村")
 ```
 
 ### NGAClient 构造参数
