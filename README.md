@@ -15,14 +15,14 @@ pip install requests
 python -m nga_client categories
 
 # 查看某个版块的话题列表
-python -m nga_client threads 650        # 原神版
+python -m nga_client threads 650
 python -m nga_client threads 275 -p 2   # 第二页
 
 # 阅读某个帖子的回复
 python -m nga_client read 46826141
 
 # 搜索版块
-python -m nga_client search 原神
+python -m nga_client search genshin
 
 # 登录（可选，用于需要认证的版块）
 python -m nga_client login --cookie "ngaPassportUid=xxx; ngaPassportCid=yyy"
@@ -70,13 +70,13 @@ client = NGAClient()
 cats = client.get_categories()
 
 # 获取话题列表
-topics = client.get_forum_topics(650, page=1)  # 原神版
+topics = client.get_forum_topics(650, page=1)
 
 # 读取帖子内容
 replies = client.read_topic(46826141)
 
 # 搜索版块
-results = client.search_forum("原神")
+results = client.search_forum("genshin")
 ```
 
 ### NGAClient 构造参数
