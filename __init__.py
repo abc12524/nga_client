@@ -12,7 +12,7 @@ Usage:
 Examples:
   python -m nga_client threads 650 --page 1
   python -m nga_client read 46826141
-  python -m nga_client search genshin
+  python -m nga_client search 鸣潮
 """
 
 import argparse
